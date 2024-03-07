@@ -3,35 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Private Chef Reservations</title>
 </head>
 <body>
-    <header class="parallax" style="background-image: url('path_to_your_image.jpg');">
-        <div class="parallax-content">
-            <h2>D | M</h2>
+    <header>
+        <div class="parallax" id="parallax">
+            <div class="parallax-content">
+                <h2 id="dynamic-text">D | M</h2>
+                <p>Daniel Maraban</p>
+            </div>
         </div>
-    </heacer>
+    </header>
 
-    <section class="contact">
-        <h2>Contact Details</h2>
-        <!-- Add contact details here -->
-    </section>
-
-    <section class="slider">
-        <h2>Past Dinners</h2>
-        <!-- Add image slider here -->
-    </section>
-
-    <section>
-        <h2>Book A Reservation<br> Have A Question?</h2>
-        <div class="form-container">
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Your Name" required><br>
-                <input type="email" name="email" placeholder="Your Email" required><br>
-                <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br>
-                <input type="submit" value="Submit">
-            </form>
+    <section class="section white">
+        <div class="content">
+            <h2>Daniel Maraban</h2>
+            <div>
+                <h3>Private Chef</h3>
+                <p>+1(708) 940 - 6927</p>
+                <p>hdmarban@gmail.com</p>
+            </div>
+            <!-- Add contact details here -->
         </div>
     </section>
+
+    <section class="section">
+        <!-- Add image slider here/// should be behind the words and moving slowly -->
+        <div class="content">
+            <h2>Past Dinners</h2>
+        </div>
+    </section>
+
+    <section class="section white">
+        <div class="content">
+            <h2>Book A Reservation / Have A Question?</h2>
+            <div class="form-container">
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required><br>
+                    <input type="email" name="email" placeholder="Your Email" required><br>
+                    <input type="text" name="name" placeholder="Number of People" required><br>
+                    <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
