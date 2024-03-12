@@ -26,19 +26,20 @@ header {
 
 .parallax-content {
     position: relative;
+    color: white;
+    text-align: center;
 }
 
 .parallax-content p{
     color: white;
-    text-align: center;
-    padding-bottom: 5%;
+    font-size: 3vh;
+    margin-bottom: 500px
 }
 
 #dynamic-text {
     font-size: 30vw; /* Adjust font size as needed */
     color: white; /* Set text color to white */
     background-color: black; /* Set background color to black */
-    padding: 55px; /* Add padding for better visibility */
 }
 
 /* Section styles */
