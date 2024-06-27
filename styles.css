@@ -10,7 +10,6 @@ header {
 }
 
 .parallax {
-    background-image: url('background.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,13 +19,14 @@ header {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    background-color: black;
 }
 
 .parallax-content {
-    position: relative;
+    position: relative; 
     color: white;
     text-align: center;
-    animation: fadeIn 2s ease-in-out;
+    animation: fadeIn 3s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -35,11 +35,11 @@ header {
 }
 
 #dynamic-text {
-    font-size: 20vw;
+    font-size: 30vw;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    padding: 30px;
+    border-radius: 30px;
 }
 
 .section {
@@ -56,12 +56,20 @@ header {
     background-color: white;
     color: black;
 }
-
 .content {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+}
+
+.contact-details {
+    text-align: left;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight:800;
+    font-size: 5rem;
+    font-style: normal;
 }
 
 .tiktok-videos {
