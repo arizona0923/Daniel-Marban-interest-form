@@ -1,17 +1,16 @@
-/* styles.css */
-
 body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
-/* Header styles */
 header {
     position: relative;
 }
 
 .parallax {
+    background-image: url('background.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,35 +20,36 @@ header {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: black;
 }
 
 .parallax-content {
     position: relative;
     color: white;
     text-align: center;
+    animation: fadeIn 2s ease-in-out;
 }
 
-.parallax-content p{
-    color: white;
-    font-size: 3vh;
-    margin-bottom: 500px
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 #dynamic-text {
-    font-size: 30vw; /* Adjust font size as needed */
-    color: white; /* Set text color to white */
-    background-color: black; /* Set background color to black */
+    font-size: 20vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
 }
 
-/* Section styles */
 .section {
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(0, 0, 0);
     color: white;
+    padding: 50px 20px;
 }
 
 .white {
@@ -57,26 +57,79 @@ header {
     color: black;
 }
 
-/* Content styles */
 .content {
     text-align: center;
-    padding: 2%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Form container styles */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-track-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-slide img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button-left {
+    left: 10px;
+}
+
+.carousel-button-right {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 .form-container {
     padding: 20px;
     border-radius: 5px;
     display: inline-block;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 input[type="text"], input[type="email"], textarea {
     width: 100%;
     padding: 10px;
-    text-align: center;
     margin: 5px 0;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 5px;
     box-sizing: border-box;
 }
 
@@ -85,6 +138,26 @@ input[type="submit"] {
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 40px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #444;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #dynamic-text {
+        font-size: 30vw;
+    }
+
+    .section {
+        padding: 30px 10px;
+    }
+
+    .content {
+        padding: 10px;
+    }
 }
