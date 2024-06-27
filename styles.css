@@ -1,10 +1,9 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Playfair Display", serif;
     overflow-x: hidden;
 }
-
 header {
     position: relative;
 }
@@ -19,14 +18,14 @@ header {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 .parallax-content {
     position: relative; 
     color: white;
     text-align: center;
-    animation: fadeIn 3s ease-in-out;
+    animation: fadeIn 4s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -35,11 +34,26 @@ header {
 }
 
 #dynamic-text {
-    font-size: 30vw;
+    display: flex;
+    align-items: center;
+    font-size: 20vw;
     color: white;
     background-color: rgb(0, 0, 0);
-    padding: 30px;
-    border-radius: 30px;
+    padding:  0 200px;
+    border-radius: 50px;
+}
+
+.letter-container {
+    font-size: 1em; /* Ensure font size remains consistent */
+    color: white;
+    padding: 80px
+}
+
+.vertical-line {
+    width: 5px; /* Adjust width as needed */
+    height: 500px; /* Ensure it spans the height of the container */
+    background-color: white;
+    display: inline-block;
 }
 
 .section {
@@ -65,7 +79,6 @@ header {
 
 .contact-details {
     text-align: left;
-    font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight:800;
     font-size: 5rem;
