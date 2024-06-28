@@ -106,20 +106,41 @@ header {
     border: 1px solid black;
     padding: 50px 20px;
 }
-.receipt {
-    background-color: white;
-    width: 300px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border: 1px solid #ccc;
+
+.column-content {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.receipt h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.left-column, .right-column {
+    flex: 1;
 }
 
+.left-column {
+    text-align: left;
+    margin-left: -100%; /* maybe use a clamp*/
+}
+.left-column h2 {
+    font-size: 7rem;
+    margin: 0; 
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+.social-icons p{
+    font-size: 2em;
+}
+
+.social-icons a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 5em;
+}
 .left-side p{
     margin: 20px 10px;
     text-align:justify;
@@ -129,43 +150,11 @@ header {
     font-style: italic;
 }
 
-.column-content {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+.social-icons a:hover {
+    color: #575757;
 }
 
-.left-column, .right-column {
-    flex: 1;
-}
-
-.left-column {
-    text-align: left;
-}
-.left-column h2 {
-    font-size: 7rem; /* Adjust font size for better readability */
-}
-
-.right-column {
-    text-align: right; /* Align text to the left */
-}
-
-
-.right-column p {
-    font-size: 1.5rem; /* Adjust font size for contact information */
-    margin: 10px 0; /* Add margin for better spacing */
-}
-
-.icons {
-    display: flex;
-    justify-content:end;
-    gap: 10px; /* Space between icons */
-    font-size: 2rem; /* Adjust font size for icons */
-}
-
+/*video section*/
 
 .tiktok-videos {
     display: flex;
@@ -190,7 +179,7 @@ header {
 
 .form-container {
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 50px;
     display: flex;
     background-color: #f9f9f9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -274,3 +263,21 @@ input[type="submit"]:hover {
         height: 300px;
     }
 }
+
+/*
+reciept styling
+.receipt {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.receipt h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+*/
