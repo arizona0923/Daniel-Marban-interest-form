@@ -7,13 +7,44 @@ body, html {
 header {
     position: relative;
 }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+        }
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar ul li {
+    margin: 0 10px;
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+}
+.navbar ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
 
 .parallax {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,14 +75,14 @@ header {
 }
 
 .letter-container {
-    font-size: 1em; /* Ensure font size remains consistent */
+    font-size: 10px; /* Ensure font size remains consistent */
     color: white;
     padding: 80px
 }
 
 .vertical-line {
     width: 5px; /* Adjust width as needed */
-    height: 500px; /* Ensure it spans the height of the container */
+    height: 1rem; /* Ensure it spans the height of the container */
     background-color: white;
     display: inline-block;
 }
