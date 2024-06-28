@@ -14,9 +14,6 @@ header {
     background-color: #ecececde;
     padding: 0px 100px;
     font-size: 1em;
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Ensures the navbar is on top of other elements */
 }
 .navbar .logo {
     color: white;
@@ -32,20 +29,21 @@ header {
 #logo {
     display: flex;
     align-items: center;
-    color: white;
-    background-color: rgb(0, 0, 0);
-    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    padding:10px 80px;
 }
 .letter-container {
-    font-size: 1em; /* Ensure font size remains consistent */
-    color: white;
+    font-size: 2em; /* Ensure font size remains consistent */
+    color: rgb(0, 0, 0);
     padding: 10px 20px;
 }
 
 .vertical-line {
     width: 2px; /* Adjust width as needed */
-    height: 2rem; /* Ensure it spans the height of the container */
-    background-color: white;
+    height: 4.5rem; /* Ensure it spans the height of the container */
+    background-color: rgb(0, 0, 0);
     display: inline-block;
 }
 .navbar ul {
